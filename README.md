@@ -25,8 +25,7 @@ A responsive and modern enrollment form built using **HTML** and **CSS**. This p
 ---
 
 ## Connect With Me 🤝 :
-
-
-
+- LinkedIn : [HARSHAA SG](https://www.linkedin.com/in/harshaasg)  
+- Gmail : harshaavardhan8@gmail.com
 
 -- feel free to give feedback 🙌🏼
