@@ -1,0 +1,298 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* COLORS */
+:root{
+    --bg:#0d0f14;
+    --surface:#1b1e27;
+    --border:#2b2f3b;
+    --accent:#d4f53c;
+    --text:#ffffff;
+    --muted:#8a8a8a;
+}
+
+/* BODY */
+body{
+    font-family:'DM Sans', sans-serif;
+    background:var(--bg);
+
+    min-height:100dvh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px 18px;
+}
+
+/* MAIN CONTAINER */
+.main-container{
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+}
+
+/* TITLE */
+.title{
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.title h1{
+    font-family:'Syne', sans-serif;
+
+    font-size:3rem;
+    line-height:1.1;
+
+    color:var(--text);
+
+    margin-bottom:10px;
+}
+
+.title h1 span{
+    color:var(--accent);
+}
+
+.title p{
+    color:var(--muted);
+
+    font-size:1rem;
+}
+
+/* CONTENT */
+.content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
+}
+
+/* LEFT */
+.left{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.left img{
+    width:100%;
+    max-width:430px;
+
+    object-fit:contain;
+
+    display:block;
+}
+
+/* RIGHT */
+.right{
+    flex:1;
+}
+
+/* INPUT BOX */
+.input-box{
+    height:60px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+}
+
+.input-box:focus-within{
+    border-color:var(--accent);
+}
+
+/* ICON */
+.icon{
+    color:#777;
+
+    margin-right:14px;
+
+    font-size:1rem;
+
+    width:18px;
+
+    text-align:center;
+}
+
+/* INPUTS */
+.input-box input,
+.input-box select{
+    width:100%;
+
+    background:none;
+
+    border:none;
+    outline:none;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-family:'DM Sans', sans-serif;
+}
+
+.input-box input::placeholder{
+    color:#666;
+}
+
+.input-box select{
+    cursor:pointer;
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    color:#666;
+}
+
+.input-box select option{
+    background:var(--surface);
+    color:#fff;
+}
+
+/* BUTTONS */
+.btns{
+    display:flex;
+
+    gap:14px;
+
+    margin-top:8px;
+}
+
+/* BUTTON COMMON */
+.btns button{
+    flex:1;
+
+    height:58px;
+
+    border-radius:16px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:'Syne', sans-serif;
+
+    font-size:1.1rem;
+
+    transition:.3s;
+}
+
+/* SUBMIT */
+.submit-btn{
+    background:var(--accent);
+
+    color:#111;
+}
+
+/* CANCEL */
+.cancel-btn{
+    background:transparent;
+
+    border:1px solid var(--border) !important;
+
+    color:#b5b5b5;
+}
+
+/* HOVER */
+.submit-btn:hover{
+    transform:translateY(-2px);
+}
+
+.cancel-btn:hover{
+    background:#1f2330;
+}
+
+/* ================= TABLET ================= */
+@media(max-width:1024px){
+
+    .content{
+        gap:36px;
+    }
+
+    .title h1{
+        font-size:2.6rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+    body{
+        min-height:100dvh;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        padding:14px;
+    }
+
+    .title{
+        margin-bottom:12px;
+    }
+
+    .title h1{
+        font-size:2.2rem;
+        line-height:1.05;
+        margin-bottom:8px;
+    }
+
+    .title p{
+        font-size:.92rem;
+    }
+
+    .content{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .left{
+        width:100%;
+    }
+
+    .left img{
+        max-width:260px;
+    }
+
+    .right{
+        width:100%;
+    }
+
+    .input-box{
+        height:54px;
+        margin-bottom:12px;
+    }
+
+    .btns{
+        flex-direction:column;
+        gap:10px;
+        margin-top:4px;
+    }
+
+    .btns button{
+        height:52px;
+        font-size:1rem;
+    }
+}
